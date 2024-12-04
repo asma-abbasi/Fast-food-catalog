@@ -31,13 +31,11 @@ function App() {
 
   const filterItems = (categoryId) => {
     setUrl(`/FastFood/list/${categoryId ? "?categoryId=" + categoryId : ""}`);
-
     // fetchData(categoryId)
   };
 
   const searchItems = async (term) => {
     setUrl(`/FastFood/search/${term ? "?term=" + term : ""}`);
-
     // setLoading(true);
     // const response = await axios.get(
     //   `/FastFood/search/${term ? "?term=" + term : ""}`
@@ -73,5 +71,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
